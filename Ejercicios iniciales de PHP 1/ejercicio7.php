@@ -54,3 +54,13 @@ echo "Valor aleatorio: ". rand() . "\n";
 echo "Número aleatorio: ". rand(10, 6789) . "\n";
 echo "Número entero aleatorio: ". mt_rand(10, 6789). "\n";
 ?>
+
+<?php #Intentar obtener un valor aleatorio que supere el valor entero máximo. ¿Qué ocurre?
+$valor_entero_maximo = 9223372036854775807;
+var_dump($valor_entero_maximo); // int(9223372036854775807)
+$valor_entero_maximo++;
+echo rand(0, $valor_entero_maximo); 
+
+#Al intentar obtener un valor aleatorio superior al valor entero máximo, ocurre el siguiente error:
+#PHP Warning:  rand() expects parameter 2 to be integer, float given in /home/runner/main.php on line 62
+?>
