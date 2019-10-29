@@ -1,4 +1,7 @@
 <?php
+
+#Realizar la potencia de dos números.
+
 $base = 0;
 $exponente = 1;
 
@@ -13,6 +16,9 @@ echo("1 elevado a 1 es: ". $respuesta);
 ?>
 
 <?php
+
+#El número entero más grande. ¿Cuántos bytes ocupa un número entero?
+
 $maximo = 10 **308;  // 10^308
 print "<p>10<sup>308</sup> se puede guardar en una variable decimal: $maximo</p>\n";
 print "\n";
@@ -22,6 +28,9 @@ print "<p>Si se intenta guardar 10<sup>309</sup>, el resultado es $demasiado</p>
 ?>
 
 <?php
+
+#Asignar a una variable un valor mayor al máximo entero. ¿Qué ocurre?
+
 $numero_grande = 9223372036854775807;
 var_dump($numero_grande);                  
 
@@ -29,6 +38,10 @@ var_dump($numero_grande);
 ?>
 
 <?php
+
+/*¿Cuántos bytes ocupa un número real en PHP? Intentar asignar a una
+variable un valor superior al máximo real permitido. ¿Qué ocurre?*/
+
 $numero_grande = 9223372036854775807;
 var_dump($numero_grande);                  
 
@@ -36,9 +49,7 @@ $numero_grande += 1;
 var_dump($numero_grande); // float(9.2233720368548E+18)
 
 #Si PHP encuentra un número fuera de los límites de un integer, se interpretará en su lugar como un valor de tipo float. También, una operación cuyo resultado sea un número fuera de los límites de un integer devolverá en su lugar un valor de tipo float. No existe ningún tipo de entero de 64 bits en PHP, por lo que los valores de gran tamaño se representan como un valor flotante. 
-?>
 
-<?php
 $maximo = PHP_INT_MAX;
 print "<p>El mayor entero que se puede guardar en una variable entera es $maximo</p>\n";
 

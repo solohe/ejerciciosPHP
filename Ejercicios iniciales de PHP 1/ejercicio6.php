@@ -1,5 +1,7 @@
 <?
-/*$_REQUEST
+/* ¿Qué es $_REQUEST y para qué sirve? Hacer uso de PHP_SELF, mediante un ejemplo.
+
+$_REQUEST
 (PHP 4 >= 4.1.0, PHP 5, PHP 7)
 
 $_REQUEST — Variables HTTP Request
