@@ -13,15 +13,23 @@ foreach ($values as $value) {
 echo "La aproximación de PI en 4 decimales es: ". round(pi(),4);
 ?>
 
-<?php #Hacerlo en array
-$var1 = 2.5; 
-$var2 = 2.6; 
-$var3 = -3.1;
+<?php
+$values = array(2.5, 2.6, -3.1);
+foreach ($values as $value) {
+    #Entero inferior
+    echo "El entero inferior de ";
+    var_export($value);
+    echo " es: ";
+    echo (floor($value)). "\n";
+    #Entero superior
+    echo "El entero superior de ";
+    var_export($value);
+    echo " es: ";
+    echo (ceil($value)). "\n";
+}
+?>
 
-echo  ("El entero inferior de ". $var1 ." es: " .floor($var1). "\n");
-echo ("El entero superior de ". $var1 ." es: " .ceil($var1). "\n");
-echo  ("El entero inferior de ". $var2 ." es: " .floor($var2). "\n");
-echo ("El entero superior de ". $var2 ." es: " .ceil($var2). "\n");
-echo  ("El entero inferior de ". $var3 ." es: " .floor($var3). "\n");
-echo ("El entero superior de ". $var3 ." es: " .ceil($var3). "\n");
+<?php
+$numero = 123456789.1234;
+echo "El número ". $numero . " con separadores es igual a: " . number_format($numero, 2, ",", "."). "\n";
 ?>
