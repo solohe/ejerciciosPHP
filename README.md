@@ -4,11 +4,15 @@ Ejercicios de PHP para la asignatura de Despliegue de Aplicaciones Web para el c
 
 La estructura de archivos se presenta en el siguiente orden:
 
- Ejercicios iniciales de PHP 1
+Ejercicios iniciales de PHP 1
 |
- Ejercicios iniciales de PHP 2
+Ejercicios iniciales de PHP 2
 |
 Cadenas
+|
+Funciones
+|
+Arrays
 
 
 
