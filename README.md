@@ -15,6 +15,11 @@ Funciones
 Arrays
 |
 Recorrido de Arrays
+|
+Arrays NotasAlumnos
+|
+Práctica 1
+
 
 
 
