@@ -1,0 +1,39 @@
+Práctica 1 (Array Unidimensional + CSS)
+a) Realizar una función crearArray que cree y devuelva un array unidimensional
+asociativo $V de n elementos, cuyo índice sea Xi, y donde i tome un valor aleatorio
+comprendido entre ind1 e ind2 (fº rand). Posteriormente se le asigna un valor a Xi
+comprendido entre val1 y val2( fº rand). El número de elementos del array será 5 por
+defecto. La función también devolverá el valor más grande.
+rand($min, $max)
+Generate a random integer
+Parameters:
+min[optional]
+max[optional]
+Returns:
+int A pseudo random value between min (or 0) and max (or getrandmax, inclusive).
+b) Crear un array $arrayNew para índices entre 10 y 25, y valores entre 100 y 200 con
+8 elementos. Posteriormente mostrar la estructura del array con print_r().
+c) Realizar una función mostrarArray, que muestre un array unidimensional
+asociativo como se muestra en el ejemplo:
+donde la tabla posea:
+o Bordes colapsados
+o Los elementos e índices estén centrados.
+o la tabla esté centrada en mitad de la página.
+o Los bordes serán de 2px y del color a elegir.
+o Mostrar el valor mayor del elemento al final de la tabla.
+o El elemento máximo tendrá el color de fondo a elegir.
+o Los valores por defecto para bordes es blue y para fondo de celda de
+valor máximo orange.
+
+ Mostrar el array $arrayNew.
+Ejercicio de DAW (PHP)
+Desarrollo de Aplicaciones Web – Despliegue de Aplicaciones Web 2
+d) Realizar una función eliminarMaximoIndice, que muestre y devuelva el array
+resultante de borrar el elemento de índice mayor. Usar la función mostrarArray.
+Eliminar el elemento de índice mayor de $arrayNew.
+e) Realizar una función ordenarArrayIndice, que ordene por índice y muestre el array.
+Usar la función mostrarArray.
+Ordenar por índice el array $arrayNew.
+f) Realizar una función ordenarValorArray, que ordene por valor y muestre el array.
+Usar la función mostrarArray.
+Ordenar por Valor el array $arrayNew.
