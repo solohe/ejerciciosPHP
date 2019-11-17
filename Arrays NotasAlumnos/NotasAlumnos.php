@@ -1,27 +1,4 @@
 <?php
-/*
-NOTAS DAW DIW DWS DWC
-AL1     7   8   8   7
-AL2     6   5   4   3
-AL3     8   8   8   9
-AL4     4   3   3   6
-a) Crear la matriz asociativa notasAlumnos y muestra su estructura de array.
-b) Realizar la función mostrarNotasAlumnos, para que muestre las notas por cada
-alumno y asignatura de la siguiente manera:
-El alumno AL1 de la asignatura DAW ha obtenido un 7
-El alumno AL1 de la asignatura DIW ha obtenido un 8
-….
-c) Realizar la función mostrarNotasAlumno, que muestre las notas de cada
-asignatura para un alumno dado, de la siguiente manera:
-La nota del alumno AL1 para la asignatura DAW es 7
-…
-La nota del alumno AL1 para la asignatura DWC es 7
-Realizar la llamada correspondiente para un alumno dado.
-d) Realizar la función Mostrar_NotaMasAlta_Alumno, que nos devuelva la nota más
-alta obtenida por un alumno dado.
-Realizar la llamada correspondiente a la función y mostrar lo que devuelve.
-*/
-
 //a
 $notasAlumnos = array(
     "AL1"=>array('DAW'=>7, 'DIW'=>8, 'DWS'=>8, 'DWC'=>7),
@@ -43,5 +20,38 @@ function mostrarNotasAlumnos($arNotas){
 }
 mostrarNotasAlumnos($notasAlumnos)
 
+//c
+echo "Ejercicio c:\n";
+function mostrarNotasAlumno($arNotas, $al){
+	foreach ($arNotas as $key=>$arrays) {
+		if ($key===$al) {
+			$alumno=$key ;
+			    foreach ($arrays as $key=>$value) {
+				        echo"La nota del alumno $alumno para la asignatura $key es $value\n";
+				    }
+		}  
+	}
+}
+mostrarNotasAlumno($notasAlumnos, 'AL3');
 
+//d
+echo "Ejercicio d:\n";
+function Mostrar_NotaMasAlta_Alumno($arNotas, $al){
+	$notaMasAlta=0;
+	$asignatura="";
+	$alumno="";
+	foreach ($arNotas as $key=>$arrays) {
+		if ($key===$al) {
+			$alumno=$key ;
+			    foreach ($arrays as $key=>$value) {
+				        if ($value > $notaMasAlta) {
+				        	$asignatura=$key;
+				        	$notaMasAlta=$value;
+				        }
+				    }
+		}  
+	}
+	echo "La nota más alta del  alumno $alumno, es un $notaMasAlta en $asignatura";
+}
+Mostrar_NotaMasAlta_Alumno($notasAlumnos, 'AL2');
 ?>
