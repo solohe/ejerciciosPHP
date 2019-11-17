@@ -8,7 +8,15 @@ El elemento de posición 0 tendrá el valor 125
 Realizar el recorrido del array unidimensional indexado numéricamente de
 dos maneras:
 a) Usando el bucle for.
-b) Usando el bucle while*/
+b) Usando el bucle while
+
+Posteriormente, buscando información del uso de funciones.
+Realizar el ejercicio anterior como función crearMostrarArray, donde $n,
+$a, y $b sean parámetros. La funición debe devolver el array creado.
+Usar las funciones print_r() y var_dump(), que tome como parámetro el
+array devuelto en la función anterior. ¿Qué nos muestra en cada uno de los
+casos?
+*/
 
 $a = 0;
 $b = 1000;
@@ -36,4 +44,18 @@ while ($contador < 10){
   $contador++;
 
 }
+
+#Función crearMostrarArray
+function crearMostrarArray($n, $a, $b){
+  $array=[];
+  for ($i = 0; $i < $n; $i ++) {
+      $array[$i] = rand($a, $b);
+      
+  }
+  return $array;
+}
+echo "<br>print_r():<br>";
+print_r(crearMostrarArray(5, 10, 1000));
+echo "<br>var_dump():<br>";
+var_dump(crearMostrarArray(5, 10, 1000));
 ?>
