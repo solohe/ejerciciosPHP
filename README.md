@@ -19,6 +19,8 @@ Recorrido de Arrays
 Arrays NotasAlumnos
 |
 Práctica 1
+|
+Práctica 2
 
 
 
